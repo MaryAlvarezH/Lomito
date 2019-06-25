@@ -1,0 +1,129 @@
+
+.about-us {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-us-image img {
+    width: 350px;
+    height: 220px;
+}
+
+.about-us-details {
+    display:flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 40px;
+    height: 140px;
+
+}
+.about-us-details h1 {
+    font-size: 30px;
+}
+.about-us-details p {
+   font-size: 18px;
+}
+
+.about-us-details span {
+    color:  #ffa36d;
+    font-style: oblique;
+}
+
+.tools {
+    background-color: #ffa36d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top:100px;
+    padding-top: 20px;
+}
+.tools .tool-item {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 180px;
+}
+
+
+.tools .tools-icon {
+    background-color: white;
+    color:  #ffa36d;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tools .tools-icon i {
+    font-size: 22px;
+}
+
+.tools .tools-icon:hover {
+   
+   
+}
+
+.tools .tools-details {
+    padding-top: 10px;
+}
+
+.tools .tools-details span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.tools .tools-details p {
+    font-size: 15px;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin:100px 0px;
+    
+}
+
+.statistics .statistics-item {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+
+}
+
+.statistics .statistics-item .number {
+    font-size: 28px;
+    width: inherit;
+    align-self: left;
+    background-color: #e0e0e0;
+    height: inherit;
+    display:inherit;
+    align-items: inherit;
+    justify-content: center;
+}
+
+.statistics .statistics-item .detail {
+    font-size: 20px;
+    background-color: #f9f9f9;
+    width: inherit;
+    padding-top: 10px;
+   
+}
+
+.statistics .statistics-item .detail span {
+    font-size: 30px;
+}
