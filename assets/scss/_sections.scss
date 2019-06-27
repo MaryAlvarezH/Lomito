@@ -1,0 +1,17 @@
+@import "variables";
+.dashboard {
+    display:flex;
+    flex-direction: row;
+
+    .aside {
+        width: 17.5vw;
+        background-color: #f9f9f9;
+    }
+    .search-option {
+        border-bottom: 2px solid $color-theme;
+    }
+
+    .card-container {
+        width: 73.5vw;
+    }
+}
