@@ -10,7 +10,7 @@
     align-items: center;
     background-color: $theme;
     font-size: 17px;
-    opacity: 0.7;
+    // opacity: 0.9;
     .logo {
         font-family:'Handlee', cursive;
         font-size: 28px;
@@ -34,7 +34,7 @@
 }
 
 .site-navbar {
-    @include generic-navbar($color-theme);
+    @include generic-navbar($color1);
 }
 
 .home-navbar {

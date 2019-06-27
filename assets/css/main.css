@@ -265,16 +265,154 @@ footer {
 .dashboard {
   display: flex;
   flex-direction: row;
+  color: #333;
 }
 .dashboard .aside {
-  width: 17.5vw;
+  width: 230px;
+  height: calc(100vh - 7.5vh);
+  flex-shrink: 0;
   background-color: #f9f9f9;
+  padding: 20px 0px;
+}
+.dashboard .search-input {
+  height: 35px;
+  width: 215px;
+  margin: 10px 0px 10px 5px;
+  background-color: #fff;
+  border-color: transparent;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 7px -6px #333;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard .search-input input {
+  height: 35px;
+  background: transparent;
+  border: none;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  margin: 0;
+}
+.dashboard .search-input button {
+  height: 33px;
+  width: 38px;
+  background-color: #f78441;
+  color: #fff;
+  border: transparent;
+  border-radius: 0.5em;
+  margin: 1px;
+  cursor: pointer;
+}
+.dashboard .search-input i {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
 }
 .dashboard .search-option {
-  border-bottom: 2px solid #f78441;
+  margin: 20px 10px 20px 3px;
+  border-bottom: 2px solid #FFAC7C;
+}
+.dashboard h3 {
+  padding: 5px 0px;
+}
+.dashboard .icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: -10px;
+}
+.dashboard .icon-container i {
+  cursor: pointer;
+}
+.dashboard .icon-container i:active, .dashboard .icon-container i:focus, .dashboard .icon-container i:hover {
+  color: #FFAC7C;
+}
+.dashboard .radio-button-group {
+  margin: 0 15px 5px 15px;
+}
+.dashboard .radio-button-group input {
+  display: none;
+}
+.dashboard .radio-button-group label {
+  position: relative;
+  cursor: pointer;
+}
+.dashboard .radio-button-group label:before {
+  content: "";
+  border: 2px solid #FFAC7C;
+  padding: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.dashboard .radio-button-group input:checked + label:after {
+  content: "";
+  border: solid #FFAC7C;
+  border-width: 0 1.5px 1.5px 0;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 5px;
+  left: 6px;
+  width: 5px;
+  height: 8px;
 }
 .dashboard .card-container {
+  margin: 0px 15px;
+  margin-right: 0;
   width: 73.5vw;
+  width: calc(100vw - 230px);
+  height: calc(100vh - 7.5vh);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 25px 50px;
+  align-items: center;
+  justify-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.dashboard .card-pet {
+  border-radius: 10px;
+  width: 93%;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.dashboard .card-pet h2 {
+  margin-bottom: 20px;
+}
+.dashboard .card-pet i {
+  color: lightgray;
+  margin-bottom: 30px;
+}
+.dashboard .pet-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px 20px;
+  color: #515151;
+}
+.dashboard .item {
+  justify-self: flex-start;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.dashboard .item-detail {
+  justify-self: flex-end;
+}
+.dashboard .card-pet-more {
+  background-color: #f78441;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 20px 0px 10px 0px;
 }
 
 .site-navbar {
@@ -285,9 +423,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #f78441;
+  background-color: #FFAC7C;
   font-size: 17px;
-  opacity: 0.7;
 }
 .site-navbar .logo {
   font-family: "Handlee", cursive;
@@ -318,7 +455,6 @@ footer {
   align-items: center;
   background-color: transparent;
   font-size: 17px;
-  opacity: 0.7;
 }
 .home-navbar .logo {
   font-family: "Handlee", cursive;
