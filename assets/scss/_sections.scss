@@ -157,3 +157,136 @@
         margin: 20px 0px 10px 0px;
     }
 }
+
+.info-pet-details {
+    display:flex;
+    justify-content: center;
+    margin: 50px 0px;
+    justify-content: center;
+    text-align: center;
+
+   .card-full-details {
+    border-radius: 10px;
+    width: 720px;
+    flex-shrink: 0;
+    height: auto;
+    box-shadow: 0px 0px 12px rgba(0,0,0,.1);
+    padding: 20px;
+    
+
+    .general-full-details{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    .image-full-details {
+        width: 220px;
+    }
+    .description-full-details {
+        align-self: flex-start;
+        width: 500px;
+        text-align: left;
+        padding: 0px 50px;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+    .image-full-details {
+        color:lightgray;
+        margin-bottom: 30px;
+    }
+
+    .item-detail {
+        display:grid;
+        grid-template-columns: 140px 300px;
+        font-size: 17.5px;
+        padding: 6px;
+        grid-gap: 0 20px;
+    }
+
+    span {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+   }
+}
+
+
+.card-pet-options {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .fa-heart {
+        color:red;
+        font-size: 35px;
+    }
+    .fa-comments {
+        color:#5bc0de;
+        font-size: 35px;
+    }
+}
+
+.btn-like {
+    background-color: transparent;
+    height: 36px;
+    border-color: transparent;
+    border-radius: 50%;
+    
+}
+.btn-comment {
+    background-color:transparent;
+    color:white;
+    height: 36px;
+    border-color: transparent;
+    border-radius: 50%;
+    // padding: 3px 8px;
+}
+
+.btn-adopt {
+    background-color: $color-theme;
+    color:white;
+    height: 36px;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+hr {
+    border-top: 1px solid #d4d4d4;
+    text-decoration: underline;
+    margin: 30px 0px 20px 0px;
+}
+
+.commets-container {
+    display:flex;
+    border: 1px solid #d4d4d4;
+    padding-left: 15px;
+    border-radius: 5px;
+    width: 500px;
+    margin: 20px 0px;
+
+    input {
+        height: 35px;
+        width: 450px;
+        border: transparent;
+
+
+    }
+
+    button {
+        background-color: $color-theme;
+        color:white;
+        height: 37px;
+        border-color: transparent;
+        padding: 3px 8px;
+        border-radius: 0px 5px 5px 0px;
+    }
+}

@@ -16,6 +16,11 @@ h6 {
   font-family: "Handlee", cursive;
 }
 
+header, footer {
+  padding: 0;
+  margin: 0;
+}
+
 #hero {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/portada2.jpg");
   background-repeat: no-repeat;
@@ -207,11 +212,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 245px;
+  width: 98.5vw;
   background-image: linear-gradient(141deg, #f78441 0%, #ffa36d 51%, #f8c5a7 75%);
+  position: absolute;
 }
-
-.footer-logo {
+footer .footer-logo {
   color: white;
   font-size: 15px;
   padding: 20px 45px;
@@ -222,6 +227,7 @@ footer {
   align-items: flex-start;
   /* background:  #f78441; */
   opacity: 0.8;
+  padding-bottom: 30px;
 }
 
 .social {
@@ -229,8 +235,7 @@ footer {
   padding-top: 20px;
   height: 30px;
 }
-
-.fa {
+.social .fa {
   padding: 10px;
   font-size: 30px;
   width: 25px;
@@ -238,22 +243,18 @@ footer {
   text-decoration: none;
   border-radius: 50%;
 }
-
-.fa:hover {
+.social .fa:hover {
   opacity: 0.7;
 }
-
-.fa-facebook {
+.social .fa-facebook {
   background: #3B5998;
   color: white;
 }
-
-.fa-twitter {
+.social .fa-twitter {
   background: #55ACEE;
   color: white;
 }
-
-.fa-instagram {
+.social .fa-instagram {
   background: #f09433;
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -410,6 +411,126 @@ footer {
   cursor: pointer;
   border-radius: 5px;
   margin: 20px 0px 10px 0px;
+}
+
+.info-pet-details {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+  justify-content: center;
+  text-align: center;
+}
+.info-pet-details .card-full-details {
+  border-radius: 10px;
+  width: 720px;
+  flex-shrink: 0;
+  height: auto;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.info-pet-details .card-full-details .general-full-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.info-pet-details .card-full-details .image-full-details {
+  width: 220px;
+}
+.info-pet-details .card-full-details .description-full-details {
+  align-self: flex-start;
+  width: 500px;
+  text-align: left;
+  padding: 0px 50px;
+}
+.info-pet-details .card-full-details h2 {
+  margin-bottom: 20px;
+}
+.info-pet-details .card-full-details .image-full-details {
+  color: lightgray;
+  margin-bottom: 30px;
+}
+.info-pet-details .card-full-details .item-detail {
+  display: grid;
+  grid-template-columns: 140px 300px;
+  font-size: 17.5px;
+  padding: 6px;
+  grid-gap: 0 20px;
+}
+.info-pet-details .card-full-details span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.info-pet-details .card-full-details p {
+  padding: 0;
+  margin: 0;
+}
+
+.card-pet-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-pet-options .fa-heart {
+  color: red;
+  font-size: 35px;
+}
+.card-pet-options .fa-comments {
+  color: #5bc0de;
+  font-size: 35px;
+}
+
+.btn-like {
+  background-color: transparent;
+  height: 36px;
+  border-color: transparent;
+  border-radius: 50%;
+}
+
+.btn-comment {
+  background-color: transparent;
+  color: white;
+  height: 36px;
+  border-color: transparent;
+  border-radius: 50%;
+}
+
+.btn-adopt {
+  background-color: #f78441;
+  color: white;
+  height: 36px;
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 3px 8px;
+}
+
+hr {
+  border-top: 1px solid #d4d4d4;
+  text-decoration: underline;
+  margin: 30px 0px 20px 0px;
+}
+
+.commets-container {
+  display: flex;
+  border: 1px solid #d4d4d4;
+  padding-left: 15px;
+  border-radius: 5px;
+  width: 500px;
+  margin: 20px 0px;
+}
+.commets-container input {
+  height: 35px;
+  width: 450px;
+  border: transparent;
+}
+.commets-container button {
+  background-color: #f78441;
+  color: white;
+  height: 37px;
+  border-color: transparent;
+  padding: 3px 8px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .site-navbar {
